@@ -9,6 +9,18 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  {
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "dist"
+        }
+      }
+    ]
+  }
+  
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
     "axios": "^1.7.7",
